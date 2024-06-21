@@ -1,0 +1,23 @@
+To run the tests: 
+- pytest
+- python -m pytest -v
+- To see the print statements: pytest -s
+
+To generate html report: 
+- pytest --html-report=TestReport.html
+
+
+
+To generate allure report: 
+- https://allurereport.org/docs/gettingstarted-installation/ --> Install from an archive (for any system)
+- https://github.com/allure-framework/allure2/releases/tag/2.29.0 --> Download the zip folder. 
+- Run git bash as admin
+- "C:\Users\sortrufa\OneDrive - Boehringer Ingelheim\Documents\projects\allure-2.29.0\bin\allure.bat" serve ./AllureReport
+
+Allure report problems:  
+    ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+
+    Please set the JAVA_HOME variable in your environment to match the
+    location of your Java installation.
+
+    https://stackoverflow.com/questions/64359564/error-java-home-is-not-set-and-no-java-command-could-be-found-in-your-flutter
