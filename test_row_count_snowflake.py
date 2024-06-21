@@ -65,20 +65,20 @@ def get_row_count(conn, table_name):
 @pytest.fixture(scope="module")
 def snowflake_config():
     return {
-        'user': 'X2ODSOMACL@BOEHRINGER-INGELHEIM.COM',
-        'account': 'BI-EMEA',
-        'warehouse': 'DEV_OMACL_VDW_ETL',
-        'database': 'DEV_OMACL_DB',
-        'schema': 'LANDING_OMACL_SCHEMA',
-        'role': 'BI-AS-ATLASSIAN-P-OMACL-TEAM',
-        'url': 'https://BI-EMEA.snowflakecomputing.com'
+        'user': '',
+        'account': '',
+        'warehouse': '',
+        'database': '',
+        'schema': '',
+        'role': '',
+        'url': ''
     }
 
 @pytest.fixture(scope="module")
 def private_key_bytes():
     region_name = "eu-west-1"
-    secret_name_private_key = "snowflake/emea/privateKey"
-    secret_name_passphrase = "snowflake/emea/passphrase"
+    secret_name_private_key = "privateKey"
+    secret_name_passphrase = "passphrase"
 
     # Retrieve secrets
     private_key_secret = get_secret(secret_name_private_key, region_name)
